@@ -52,5 +52,7 @@
     </table>
 
     <br/>
+
+    <button id="boton"><a href="../index.php">Cerrar</a></button>
 </body>
 </html>

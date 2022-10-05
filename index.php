@@ -1,7 +1,9 @@
 <?php
     session_start();
 
-    $_SESSION["libros"] = array();
+    if(!isset($_SESSION["libros"])) {
+        $_SESSION["libros"] = [];
+    }
 ?>
 
 <!DOCTYPE html>
