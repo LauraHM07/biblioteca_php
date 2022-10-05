@@ -7,5 +7,5 @@
 
     array_push($_SESSION["libros"], $libro);
 
-    header('Location:libros.php');
+    header('Location:listadoLibros.php');
 ?>
