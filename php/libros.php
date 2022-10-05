@@ -17,7 +17,7 @@
     
     <h1>Libros</h1>
 
-    <table border="1" width="700em" style="text-align:center">
+    <table border="1" width="500em" style="text-align:center">
         <tr">
             <td>
                 <p>ISBN</p>
@@ -31,6 +31,9 @@
             <td>
                 <p>Fecha</p>
             </td>
+            <td>
+                <button id="boton"><a href="nuevoLibro.php">Nuevo libro</a></button>
+            </td>   
         </tr>
 
         <?php
@@ -42,14 +45,12 @@
                 echo "<td> <p>" . $libro->get_titulo() . "</p> </td>";
                 echo "<td> <p>" . $libro->get_autor() . "</p> </td>";
                 echo "<td> <p>" . $libro->get_fecha() . "</p> </td>";
+                echo "<td> <button id='boton'><a href='editarLibro.php'>Editar libro</a></button> <button id='boton'><a href='eliminarLibro.php'>Borrar libro</a></button></td>";
                 echo "</tr>";
             }
         ?>
     </table>
 
     <br/>
-
-    <button id="boton"><a href="nuevoLibro.php">Nuevo libro</a></button>
-    <button id="boton"><a href="../index.php">Cerrar</a></button>
 </body>
 </html>
