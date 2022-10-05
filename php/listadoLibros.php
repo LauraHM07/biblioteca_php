@@ -2,6 +2,8 @@
     require 'claseLibro.php';
 
     session_start();
+
+    $_SESSION["libros"] = array();
 ?>
 
 <!DOCTYPE html>
