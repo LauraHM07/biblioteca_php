@@ -3,12 +3,7 @@
 
     session_start();
 
-    $isbn = $_POST['isbn'];
-    $titulo = $_POST['titulo'];
-    $autor = $_POST['autor'];
-    $fecha = $_POST['fecha'];
-
-    $libro = new Libro($isbn, $titulo, $autor, $fecha);
+    $libro = new Libro($_POST['isbn'], $_POST['titulo'], $_POST['autor'], $_POST['fecha']);
 
     array_push($_SESSION["libros"], $libro);
 

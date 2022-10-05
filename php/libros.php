@@ -17,7 +17,7 @@
     
     <h1>Libros</h1>
 
-    <table border="1">
+    <table border="1" width="700em" style="text-align:center">
         <tr">
             <td>
                 <p>ISBN</p>
@@ -39,12 +39,17 @@
             foreach($libros as $libro) {
                 echo "<tr>";
                 echo "<td> <p>" . $libro->isbn . "</p> </td>";
+                echo "<td> <p>" . $libro->titulo . "</p> </td>";
+                echo "<td> <p>" . $libro->autor . "</p> </td>";
+                echo "<td> <p>" . $libro->fecha . "</p> </td>";
                 echo "</tr>";
             }
         ?>
     </table>
 
+    <br/>
+
     <button id="boton"><a href="nuevoLibro.php">Nuevo libro</a></button>
-    <button id="boton"><a href="../index.html">Cerrar</a></button>
+    <button id="boton"><a href="../index.php">Cerrar</a></button>
 </body>
 </html>
