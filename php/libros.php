@@ -2,8 +2,6 @@
     require 'claseLibro.php';
 
     session_start();
-
-    $_SESSION["libros"] = array();
 ?>
 
 <!DOCTYPE html>
@@ -40,10 +38,10 @@
 
             foreach($libros as $libro) {
                 echo "<tr>";
-                echo "<td> <p>" . $libro->isbn . "</p> </td>";
-                echo "<td> <p>" . $libro->titulo . "</p> </td>";
-                echo "<td> <p>" . $libro->autor . "</p> </td>";
-                echo "<td> <p>" . $libro->fecha . "</p> </td>";
+                echo "<td> <p>" . $libro->get_isbn() . "</p> </td>";
+                echo "<td> <p>" . $libro->get_titulo() . "</p> </td>";
+                echo "<td> <p>" . $libro->get_autor() . "</p> </td>";
+                echo "<td> <p>" . $libro->get_fecha() . "</p> </td>";
                 echo "</tr>";
             }
         ?>
