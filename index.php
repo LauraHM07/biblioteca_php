@@ -15,7 +15,7 @@
     <h1>Biblioteca</h1>
 
     <ul>
-        <li><a href="php/listadoLibros.php">Libros</a></li>
+        <li><a href="php/libros.php">Libros</a></li>
         <li><a href="">Socios</a></li>
     </ul>
 </body>
