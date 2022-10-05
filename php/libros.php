@@ -1,5 +1,5 @@
 <?php
-    require 'libreria.php';
+    require 'claseLibro.php';
 
     session_start();
 ?>
