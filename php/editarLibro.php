@@ -1,5 +1,9 @@
 <?php
+    require 'claseLibro.php';
+
     session_start();
+
+    $libros = $_SESSION["libros"];
 ?>
 
 <!DOCTYPE html>
@@ -12,5 +16,17 @@
 </head>
 <body>
     <h1>Editar libro</h1>
+
+    <form action="editado.php" method="post">
+        ISBN: <input type="text" name="isbn">
+        <br/><br/>
+        Título: <input type="text" name="titulo">
+        <br/><br/>
+        Autor: <input type="text" name="autor">
+        <br/><br/>
+        Fecha: <input type="text" name="fecha">
+        <br/><br/>
+        <input type="submit" value="Editar">
+    </form>
 </body>
 </html>
