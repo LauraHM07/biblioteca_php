@@ -39,13 +39,21 @@
         <?php
             $libros = $_SESSION["libros"];
 
-            foreach($libros as $libro) {
+            foreach($libros as $i => $libro) {
                 echo "<tr>";
                 echo "<td> <p>" . $libro->get_isbn() . "</p> </td>";
                 echo "<td> <p>" . $libro->get_titulo() . "</p> </td>";
                 echo "<td> <p>" . $libro->get_autor() . "</p> </td>";
                 echo "<td> <p>" . $libro->get_fecha() . "</p> </td>";
-                echo "<td> <button id='boton'><a href='editarLibro.php'>Editar libro</a></button> <button id='boton'><a href='eliminarLibro.php'>Borrar libro</a></button></td>";
+                echo "<td> 
+                        <form action='editarLibro.php' method='post'>
+                            <input type='submit' value='Editar'>
+                        </form>
+                        <form action='eliminarLibro.php' method='post'>
+                            <input type='submit' value='Borrar'>
+                            <input type='hidden' name='pos' value='".$i."'>
+                        </form>
+                    </td>";
                 echo "</tr>";
             }
         ?>
