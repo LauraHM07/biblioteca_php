@@ -48,6 +48,7 @@
                 echo "<td> 
                         <form action='editarLibro.php' method='post'>
                             <input type='submit' value='Editar'>
+                            <input type='hidden' name='isbn' value='".$libro->get_isbn()."'>
                         </form>
                         <form action='eliminarLibro.php' method='post'>
                             <input type='submit' value='Borrar'>
