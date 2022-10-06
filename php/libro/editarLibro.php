@@ -34,7 +34,7 @@
         }
 
         echo "<form action='editado.php' method='post'>
-                 ISBN: <input type='text' name='isbn' value='".$isbn."'>
+                ISBN: <input type='text' name='isbn' value='".$isbn."'>
                 <br/><br/>
                 Título: <input type='tex't name='titulo' value='".$titulo."'>
                 <br/><br/>

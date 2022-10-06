@@ -4,6 +4,10 @@
     if(!isset($_SESSION["libros"])) {
         $_SESSION["libros"] = [];
     }
+
+    if(!isset($_SESSION["socios"])) {
+        $_SESSION["socios"] = [];
+    }
 ?>
 
 <!DOCTYPE html>
@@ -20,7 +24,7 @@
 
     <ul>
         <li><a href="php/libro/libros.php">Libros</a></li>
-        <li><a href="">Socios</a></li>
+        <li><a href="php/socio/socios.php">Socios</a></li>
     </ul>
 </body>
 </html>

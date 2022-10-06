@@ -7,9 +7,7 @@
 
     $pos = $_POST['pos'];
 
-    foreach($libros as $libro) {
-        unset($libros[$pos]);
-    }
+    array_splice($libros, $pos, 1);
 
     $_SESSION["libros"] = $libros;
 

@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <h1>LIBRO</h1>
+    <h1>Libro</h1>
 
     <form action="altaLibro.php" method="post">
         ISBN: <input type="text" name="isbn">
