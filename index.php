@@ -23,8 +23,9 @@
     <h1>Biblioteca</h1>
 
     <ul>
-        <li><a href="php/libro/libros.php">Libros</a></li>
-        <li><a href="php/socio/socios.php">Socios</a></li>
+        <li><button><a href="php/libro/libros.php">Libros</a></button></li>
+        </br>
+        <li><button><a href="php/socio/socios.php">Socios</a></button></li>
     </ul>
 </body>
 </html>
